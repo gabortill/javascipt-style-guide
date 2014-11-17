@@ -15,6 +15,7 @@ This is my guide for writing consistent JavaScript code.
 * [Naming](#naming)
 * [Array](#array)
 * [Object](#object)
+* [Equality](#equality)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -231,7 +232,8 @@ var goodObj = {
     top: 110
 };
 ```
-
+## Equality
+The == and != operators do type coercion before comparing therefore use === and !== operators.
 
 
 
