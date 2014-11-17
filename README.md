@@ -13,6 +13,7 @@ This is my guide for writing consistent JavaScript code.
 * [Chaining](#chaining)
 * [Variable declaration](#variable-declaration)
 * [Naming](#naming)
+* [Array](#array)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -120,14 +121,14 @@ var goodObj = {
 ```
 
 ## Naming
-Use descriptive lowerCamelCase naming for variables, properties and functions except constructor functions. Constructor functions that must be used with the new prefix and UpperCamelCase naming.
-```js
-// BAD
-var bad_name = 'I am BAD';
-```
+Use descriptive lowerCamelCase naming for variables, properties and functions except constructor functions. Constructor functions that must be used with the new prefix and UpperCamelCase naming. Do not use reserved words.
 ```js
 // BAD
 var badname = 'I am BAD';
+```
+```js
+// BAD
+var bad_name = 'underbar is BAD';
 ```
 ```js
 // BAD
@@ -142,8 +143,44 @@ var a = 'avoid single character names';
 var goodName = 'I am GOOD';
 ```
 
-
-
+## Array
+Use Array literals instead of constructors. [Array constructors are error-prone due to their arguments.](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Array_and_Object_literals#Array_and_Object_literals)
+```js
+// BAD
+var badArr = new Array();
+```
+```js
+// GOOD
+var goodArr = [];
+```
+Single line Array initializer – no space after [ and before ].
+```js
+// BAD
+var badArr = [ 'one', 'two', 'three' ];
+```
+```js
+// GOOD
+var goodArr = ['one', 'two', 'three'];
+```
+```js
+// multiline array initializer is BETTER
+var goodArr = [
+    'one',
+    'two',
+    'three'
+];
+```
+Never use Array as a map/hash/associative array.
+```js
+// BAD
+var skills = [];
+skills['Document language'] = 'HTML5';
+```
+```js
+var skills = {
+    'Document language': 'HTML5'
+};
+```
 
 
 
