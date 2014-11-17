@@ -10,6 +10,7 @@ This is my guide for writing consistent JavaScript code.
 * [Line number](#line-number)
 * [Quotation mark](#quotation-mark)
 * [Curly brace in decision block](#curly-brace-in-decision-block)
+* [Chaining](#chaining)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -33,12 +34,12 @@ Keep max 40 lines per file. Easier to understand if you see everything in a file
 Use single quotes. This is helpful when creating strings that include HTML.
 ```js
 // BAD
-var foo = "bar";
+var bad = "BAD";
 var elem = "<input type=\"text\" />";
 ```
 ```js
 // GOOD
-var foo = 'bar';
+var good = 'GOOD';
 var elem = '<input type="text" />';
 ```
 
@@ -62,7 +63,34 @@ if (true) {
 }
 ```
 
+## Chaining
+Use one method per line if you want to chain methods. Also indent these methods 'cause it's easier to tell they are part of the same chain.
+```js
+// BAD
+var bad = new Bad();
 
+bad
+.methodOne()
+.methodTwo()
+.methodThree();
+```
+```js
+// BAD
+var bad = new Bad();
+
+bad.methodOne()
+    .methodTwo()
+    .methodThree();
+```
+```js
+// GOOD
+var good = new Good();
+
+good
+    .methodOne()
+    .methodTwo()
+    .methodThree();
+```
 
 
 
