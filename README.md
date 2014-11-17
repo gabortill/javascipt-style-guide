@@ -12,6 +12,7 @@ This is my guide for writing consistent JavaScript code.
 * [Curly brace in decision block](#curly-brace-in-decision-block)
 * [Chaining](#chaining)
 * [Variable declaration](#variable-declaration)
+* [Naming](#naming)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -118,7 +119,28 @@ var goodObj = {
 };
 ```
 
-
+## Naming
+Use descriptive lowerCamelCase naming for variables, properties and functions except constructor functions. Constructor functions that must be used with the new prefix and UpperCamelCase naming.
+```js
+// BAD
+var bad_name = 'I am BAD';
+```
+```js
+// BAD
+var badname = 'I am BAD';
+```
+```js
+// BAD
+var BADNAME = 'There is no constants in ECMAScript 5';
+```
+```js
+// BAD
+var a = 'avoid single character names';
+```
+```js
+// GOOD
+var goodName = 'I am GOOD';
+```
 
 
 
