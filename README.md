@@ -14,6 +14,7 @@ This is my guide for writing consistent JavaScript code.
 * [Variable declaration](#variable-declaration)
 * [Naming](#naming)
 * [Array](#array)
+* [Object](#object)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -181,6 +182,75 @@ var skills = {
     'Document language': 'HTML5'
 };
 ```
+
+## Object
+Use literal syntax for object creation. They don't have the constructor problem like Arrays, but be consistent.
+```js
+// BAD
+var badObj = new Object();
+```
+```js
+// GOOD
+var goodObj = {};
+```
+Single line Object initializer – no space after { and before }.
+```js
+// BAD
+var badObj = { a: 0, b: 1, c: 2 };
+```
+```js
+// GOOD
+var goodObj = {a: 0, b: 1, c: 2};
+```
+```js
+// multiline object initializer is BETTER
+var goodObj = {
+    a: 0,
+    b: 1,
+    c: 2
+};
+```
+Do not align to the colon.
+```js
+// BAD
+var badObj = {
+    bottom : 15,
+    left   : 15,
+    right  : 20,
+    top    : 110
+};
+```
+```js
+// GOOD
+var goodObj = {
+    bottom: 15,
+    left: 15,
+    right: 20,
+    top: 110
+};
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
