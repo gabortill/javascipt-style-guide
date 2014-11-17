@@ -4,12 +4,12 @@ This is my guide for writing consistent JavaScript code.
 
 ## Table of contents
 
-* [Indention](#2-spaces-for-indention)
+* [Indention](#indention)
 * [Newlines](#newlines)
 * [No trailing whitespace](#no-trailing-whitespace)
 * [Use Semicolons](#use-semicolons)
 
-## 2 Spaces for indention
+## Indention
 
 Use 2 spaces for indenting your code and swear an oath to never mix tabs and
 spaces - a special kind of hell is awaiting you otherwise.
