@@ -193,6 +193,7 @@ var badObj = new Object();
 // GOOD
 var goodObj = {};
 ```
+
 Single line Object initializer – no space after { and before }.
 ```js
 // BAD
@@ -210,6 +211,7 @@ var goodObj = {
     c: 2
 };
 ```
+
 Do not align to the colon.
 ```js
 // BAD
