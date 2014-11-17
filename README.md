@@ -1,33 +1,42 @@
 # JavaScript Style Guide
-
 This is my guide for writing consistent JavaScript code.
 
 ## Table of contents
-
 * [Indention](#indention)
-* [Newlines](#newlines)
-* [No trailing whitespace](#no-trailing-whitespace)
-* [Use Semicolons](#use-semicolons)
+* [Newline](#newline)
+* [Trailing whitespace](#trailing-whitespace)
+* [Semicolon](#semicolon)
+* [Line break](#line-break)
+* [Line number](#line-number)
+* [Quotation mark](#quotation-mark)
 
-## Indentions
+## Indention
+Use 4 spaces with soft TAB.
 
-Use 2 spaces for indenting your code and swear an oath to never mix tabs and
-spaces - a special kind of hell is awaiting you otherwise.
+## Newline
+Use UNIX-style newlines (`\n`), and a newline character as the last character of a file. Windows-style newlines (`\r\n`) are forbidden inside any repository.
 
-## Newlines
+## Trailing whitespace
+Clean up any trailing whitespace in javascript files.
 
-Use UNIX-style newlines (`\n`), and a newline character as the last character
-of a file. Windows-style newlines (`\r\n`) are forbidden inside any repository.
+## Semicolon
+Leave semicolons is dangerous because it can make mask errors, so use them.
 
-## No trailing whitespace
+## Line break
+Limit your lines to 80 characters. Screens have gotten much bigger, but your brain has not.
 
-Just like you brush your teeth after every meal, you clean up any trailing
-whitespace in your JS files before committing. Otherwise the rotten smell of
-careless neglect will eventually drive away contributors and/or co-workers.
+## Line number
+Keep max 40 lines per file. Easier to understand if you see everything in a file without scrolling.
 
-## Use Semicolons
-
-According to [scientific research][hnsemicolons], the usage of semicolons is
-a core value of our community. Consider the points of [the opposition][], but
-be a traditionalist when it comes to abusing error correction mechanisms for
-cheap syntactic pleasures.
+## Quotation mark
+Use single quotes. This is helpful when creating strings that include HTML.
+```js
+// BAD
+var foo = "bar";
+var elem = "<input type=\"text\" />";
+```
+```js
+// GOOD
+var foo = 'bar';
+var elem = '<input type="text" />';
+```
