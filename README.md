@@ -11,6 +11,7 @@ This is my guide for writing consistent JavaScript code.
 * [Quotation mark](#quotation-mark)
 * [Curly brace in decision block](#curly-brace-in-decision-block)
 * [Chaining](#chaining)
+* [Variable declaration](#variable-declaration)
 
 ## Indention
 Use 4 spaces with soft TAB.
