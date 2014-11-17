@@ -18,6 +18,7 @@ This is my guide for writing consistent JavaScript code.
 * [Array](#array)
 * [Object](#object)
 * [Equality](#equality)
+* [Built-in](#built-in)
 
 
 
@@ -267,6 +268,29 @@ var goodObj = {
 ## Equality
 The == and != operators do type coercion before comparing therefore use === and !== operators.
 
+
+
+## Built-in
+Never extend the prototype of native JavaScript objects unless polyfilling.
+```js
+// BAD
+Array.prototype.empty = function () {
+    return !this.length;
+};
+
+var badArr = [];
+if (badArr.empty()) {
+    console.log('I am BAD');
+}
+```
+```js
+// GOOD
+var goodArr = [];
+
+if (!goodArr.length) {
+    console.log('I am GOOD');
+}
+```
 
 
 
