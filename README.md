@@ -4,7 +4,7 @@ This is my guide for writing consistent JavaScript code.
 
 ## Table of contents
 
-* [2 Spaces for indention](#2-spaces-for-indention)
+* [indention](#2-spaces-for-indention)
 * [Newlines](#newlines)
 * [No trailing whitespace](#no-trailing-whitespace)
 * [Use Semicolons](#use-semicolons)
