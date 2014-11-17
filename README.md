@@ -19,6 +19,7 @@ This is my guide for writing consistent JavaScript code.
 * [Object](#object)
 * [Equality](#equality)
 * [Built-in](#built-in)
+* [Comment](#comment)
 
 
 
@@ -292,6 +293,27 @@ if (!goodArr.length) {
 }
 ```
 
+
+
+## Comment
+Use single line comments for developing. Block comments are for documentation. Place single line comments on a newline of subject and put an empty line before.
+```js
+// BAD
+var bad = true; // comment in wrong place
+```
+```js
+// BAD
+var bad;
+// missing empty newline
+bad = true;
+```
+```js
+// GOOD
+var good;
+
+// set to true
+good = true;
+```
 
 
 
