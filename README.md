@@ -64,7 +64,7 @@ if (true) {
 ```
 
 ## Chaining
-Use one method per line if you want to chain methods. Also indent these methods 'cause it's easier to tell they are part of the same chain.
+Use one method per line if you want to chain methods. Also indent these methods, because it's easier to tell they are part of the same chain.
 ```js
 // BAD
 var bad = new Bad();
@@ -92,6 +92,30 @@ good
     .methodThree();
 ```
 
+## Variable declaration
+The var statement should be the first statement in the function body. Avoid single var pattern and declare every variable before used. These are makes the program easier to read.
+```js
+// BAD
+var badString = 'I am BAD',
+    badElem = document.getElementById('bad-elem'),
+    badArr = ['one', 'two', 'three'],
+    badObj = {
+      'one': 1,
+      'two': 2,
+      'three': 3
+    };
+```
+```js
+// GOOD
+var goodString = 'I am GOOD';
+var goodElem = document.getElementById('good-elem');
+var goodArr = ['one', 'two', 'three'];
+var goodObj = {
+  'one': 1,
+  'two': 2,
+  'three': 3
+};
+```
 
 
 
