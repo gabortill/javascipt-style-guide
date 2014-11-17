@@ -9,6 +9,7 @@ This is my guide for writing consistent JavaScript code.
 * [Line break](#line-break)
 * [Line number](#line-number)
 * [Quotation mark](#quotation-mark)
+* [Curly brace in decision block](#curly-brace-in-decision-block)
 
 ## Indention
 Use 4 spaces with soft TAB.
@@ -40,3 +41,41 @@ var elem = "<input type=\"text\" />";
 var foo = 'bar';
 var elem = '<input type="text" />';
 ```
+
+## Curly brace in decision block
+Always use curly braces with multiline blocks (opening braces go on the same line as the statement).
+```js
+// BAD
+if (true) console.log('BAD');
+```
+```js
+// BAD
+if (true)
+{
+    console.log('BAD');
+}
+```
+```js
+// GOOD
+if (true) {
+    console.log('GOOD');
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
