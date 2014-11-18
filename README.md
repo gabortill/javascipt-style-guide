@@ -545,7 +545,6 @@ BadObj.prototype = {
 ```
 ```js
 // GOOD
-var method =
 GoodObj.prototype.goodProp = 'I am good';
 GoodObj.prototype.goodMethod = function () {
     return 'good';
