@@ -14,6 +14,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Curly brace in decision block](#curly-brace-in-decision-block)
 1. [Chaining](#chaining)
 1. [Variable declaration](#variable-declaration)
+1. [Function declaration](#function-declaration)
 1. [Naming](#naming)
 1. [Array](#array)
 1. [Object](#object)
@@ -219,6 +220,19 @@ var goodObj = {
   'three': 3
 };
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Function declaration
+1. All functions should be declared before they are used.
+2. Inner functions should follow the var statement.
+
+**why?**
+
+1. Use of global functions should be minimized.
+2. This helps make it clear what variables are included in its scope.
 
 **[⬆ back to top](#table-of-contents)**
 
