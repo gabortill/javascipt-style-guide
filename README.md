@@ -4,22 +4,23 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Table of contents
- 1. [Indention](#indention)
- 1. [Newline](#newline)
- 1. [Trailing whitespace](#trailing-whitespace)
- 1. [Semicolon](#semicolon)
- 1. [Line break](#line-break)
- 1. [Line number](#line-number)
- 1. [Quotation mark](#quotation-mark)
- 1. [Curly brace in decision block](#curly-brace-in-decision-block)
- 1. [Chaining](#chaining)
- 1. [Variable declaration](#variable-declaration)
- 1. [Naming](#naming)
- 1. [Array](#array)
- 1. [Object](#object)
- 1. [Equality](#equality)
- 1. [Built-in](#built-in)
- 1. [Comment](#comment)
+1. [Indention](#indention)
+1. [Newline](#newline)
+1. [Trailing whitespace](#trailing-whitespace)
+1. [Semicolon](#semicolon)
+1. [Line break](#line-break)
+1. [Line number](#line-number)
+1. [Quotation mark](#quotation-mark)
+1. [Curly brace in decision block](#curly-brace-in-decision-block)
+1. [Chaining](#chaining)
+1. [Variable declaration](#variable-declaration)
+1. [Naming](#naming)
+1. [Array](#array)
+1. [Object](#object)
+1. [Equality](#equality)
+1. [Built-in](#built-in)
+1. [Comment](#comment)
+1. [Type Casting And Coercion](#type-casting-and-coercion)
 
 
 
@@ -100,7 +101,7 @@ Use single quotes.
 
 This is helpful when creating strings that include HTML.
 
-```javascript
+```js
 // BAD
 var bad = "BAD";
 var elem = "<input type=\"text\" />";
@@ -432,6 +433,41 @@ var good;
 
 // set to true
 good = true;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Type Casting And Coercion
+Use parseInt() for Numbers and always with the radix parameter.
+
+**why?**
+
+ECMAScript 5 specifies that 10 (decimal) is used, but not all browsers support this yet.
+
+```js
+// BAD
+var badSize = parseInt('16px');
+```
+```js
+// GOOD
+var goodSize = parseInt('16px', 10);
+```
+
+Use Boolean() for Booleans without the new operator.
+
+**why?**
+
+The result with the new operator will be an Object (complex type), but without it will be a primitive type.
+
+```js
+// BAD
+var badBool = new Boolean(something);
+```
+```js
+// GOOD
+var goodBool = Boolean(something);
 ```
 
 **[⬆ back to top](#table-of-contents)**
