@@ -24,6 +24,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Multiline string literal](#multiline-string-literal)
 1. [Module](#module)
 1. [Prototype](#prototype)
+1. [Hoisting](#hoisting)
 
 
 
@@ -549,6 +550,34 @@ GoodObj.prototype.goodProp = 'I am good';
 GoodObj.prototype.goodMethod = function () {
     return 'good';
 };
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Hoisting
+Moving declarations to the top.
+
+**why?**
+
+Improve readabillity and easier to understand the code.
+
+```js
+// BAD
+function badWrapper () {
+    console.log(msg);
+
+    var msg = 'I am bad';
+}
+```
+```js
+// GOOD
+function goodWrapper () {
+    var msg = 'I am happy';
+
+    console.log(msg);
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
