@@ -511,14 +511,14 @@ var goodStr = 'Veggies es bonus vobis, proinde vos postulo essum magis' +
 
 ```js
 // BAD
-var badModule = 'I don\'t want to be a global variable :-(';
+var badModule = 'I want to be a part of a module';
 ```
 ```js
 // GOOD
 (function () {
     'use strict';
 
-    var goodModule = 'I am happy :-)';
+    var goodModule = 'IIFE is cool';
 }());
 ```
 
