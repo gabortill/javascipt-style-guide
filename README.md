@@ -35,29 +35,29 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Newline
-1. Use UNIX-style newlines (`\n`), and a newline character as the last character of a file.
+Use UNIX-style newlines (`\n`), and a newline character as the last character of a file.
 
 **why?**
 
-1. Windows-style newlines (`\r\n`) are forbidden inside any repository.
+Windows-style newlines (`\r\n`) are forbidden inside any repository.
 
 
 
 ## Trailing whitespace
-1. Clean up any trailing whitespace in javascript files.
+Clean up any trailing whitespace in javascript files.
 
 **why?**
 
-1. Trailing whitespaces are unnecessary and improve the filesize.
+Trailing whitespaces are unnecessary and improve the filesize.
 
 
 
 ## Semicolon
-1. Always use semicolons.
+Always use semicolons.
 
 **why?**
 
-1. Leave semicolons is dangerous because it can make mask errors.
+Leave semicolons is dangerous because it can make mask errors.
 
 
 
