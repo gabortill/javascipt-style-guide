@@ -24,13 +24,13 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Indention
-    1. Use 4 spaces.
-    2. Use soft TAB.
+1. Use 4 spaces.
+2. Use soft TAB.
 
-    **why?**
+**why?**
 
-    1. 4 spaces are imporve readabillity.
-    2. Use of spaces can produce a smaller filesize.
+1. 4 spaces are imporve readabillity.
+2. Use of spaces can produce a smaller filesize.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -100,7 +100,7 @@ Use single quotes.
 
 This is helpful when creating strings that include HTML.
 
-```js
+```javascript
 // BAD
 var bad = "BAD";
 var elem = "<input type=\"text\" />";
