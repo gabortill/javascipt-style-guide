@@ -103,6 +103,11 @@ var elem = '<input type="text" />';
 
 ## Curly brace in decision block
 Always use curly braces with multiline blocks (opening braces go on the same line as the statement).
+
+**why?**
+
+To omit braces is decrease readabillity.
+
 ```js
 // BAD
 if (true) console.log('BAD');
@@ -124,7 +129,12 @@ if (true) {
 
 
 ## Chaining
-Use one method per line if you want to chain methods. Also indent these methods, because it's easier to tell they are part of the same chain.
+Use one method per line if you want to chain methods, and also indent these.
+
+**why?$$
+
+Because it's easier to tell they are part of the same chain.
+
 ```js
 // BAD
 var bad = new Bad();
@@ -189,7 +199,16 @@ var goodObj = {
 
 
 ## Naming
-Use descriptive lowerCamelCase naming for variables, properties and functions except constructor functions. Constructor functions that must be used with the new prefix and UpperCamelCase naming. Do not use reserved words.
+1. Do not use reserved words.
+2. Use descriptive lowerCamelCase naming for variables, properties and functions except constructor functions.
+3. Constructor functions that must be used with the new prefix and UpperCamelCase naming.
+
+**why?**
+
+1. Some identifiers are reserved words and cannot be used as variables or function names.
+2. For easier understanding.
+3. Bad things can happen if new is not used, so the capitalization convention is the only defense we have.
+
 ```js
 // BAD
 var badname = 'I am BAD';
@@ -257,7 +276,12 @@ var skills = {
 
 
 ## Object
-Use literal syntax for object creation. They don't have the constructor problem like Arrays, but be consistent.
+Use literal syntax for object creation.
+
+**why?**
+
+They don't have the constructor problem like Arrays, but be consistent.
+
 ```js
 // BAD
 var badObj = new Object();
@@ -307,12 +331,21 @@ var goodObj = {
 
 
 ## Equality
-The == and != operators do type coercion before comparing therefore use === and !== operators.
+Use === and !== operators.
+
+**why?**
+
+The == and != operators do type coercion before comparing.
 
 
 
 ## Built-in
 Never extend the prototype of native JavaScript objects unless polyfilling.
+
+**why?**
+
+Your future self will be forever grateful.
+
 ```js
 // BAD
 Array.prototype.empty = function () {
@@ -336,11 +369,13 @@ if (!goodArr.length) {
 
 
 ## Comment
-Generally use single line comments. Place single line comments on a newline of subject and put an empty line before.
+1. Generally use single line comments.
+2. Place single line comments on a newline of subject and put an empty line before.
 
 **why?**
 
-Save block comments for formal documentation. Empty lines above comments are improve readabillity.
+1. Save block comments for formal documentation.
+2. Empty lines above comments are improve readabillity.
 
 ```js
 // BAD
@@ -367,32 +402,3 @@ var good;
 // set to true
 good = true;
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
