@@ -22,6 +22,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Comment](#comment)
 1. [Type Casting And Coercion](#type-casting-and-coercion)
 1. [Multiline string literal](#multiline-string-literal)
+1. [Module](#module)
 
 
 
@@ -493,6 +494,32 @@ var badStr = 'Veggies es bonus vobis, proinde vos postulo essum magis \
 var goodStr = 'Veggies es bonus vobis, proinde vos postulo essum magis' +
     'kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon' +
     'azuki bean garlic';
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Module
+1. Start modules with an Immediately Invoked Function Expression.
+2. Use strict mode.
+
+**why?**
+
+1. In order to avoid global namespace pollution.
+2. Strict mode enables more warnings and makes JavaScript a cleaner language.
+
+```js
+// BAD
+var badModule = 'I don\'t want to be a global variable :-(';
+```
+```js
+// GOOD
+(function () {
+    'use strict';
+
+    var goodModule = 'I am happy :-)';
+}());
 ```
 
 **[⬆ back to top](#table-of-contents)**
