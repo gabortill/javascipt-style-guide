@@ -24,38 +24,40 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Indention
-Use 4 spaces with soft TAB.
+1. Use 4 spaces.
+2. Use soft TAB.
 
 **why?**
 
-4 spaces are imporve readabillity and the use of spaces can produce a smaller filesize.
+1. 4 spaces are imporve readabillity.
+2. Use of spaces can produce a smaller filesize.
 
 
 
 ## Newline
-Use UNIX-style newlines (`\n`), and a newline character as the last character of a file.
+1. Use UNIX-style newlines (`\n`), and a newline character as the last character of a file.
 
 **why?**
 
-Windows-style newlines (`\r\n`) are forbidden inside any repository.
+1. Windows-style newlines (`\r\n`) are forbidden inside any repository.
 
 
 
 ## Trailing whitespace
-Clean up any trailing whitespace in javascript files.
+1. Clean up any trailing whitespace in javascript files.
 
 **why?**
 
-Trailing whitespaces are unnecessary and improve the filesize.
+1. Trailing whitespaces are unnecessary and improve the filesize.
 
 
 
 ## Semicolon
-Always use semicolons.
+1. Always use semicolons.
 
 **why?**
 
-Leave semicolons is dangerous because it can make mask errors.
+1. Leave semicolons is dangerous because it can make mask errors.
 
 
 
@@ -146,7 +148,11 @@ good
 
 
 ## Variable declaration
-The var statement should be the first statement in the function body. Avoid single var pattern and declare every variable before used. These are makes the program easier to read.
+All variables should be declared before used. The var statement should be the first statement in the function body. Avoid single var pattern and declare every variable before used.
+
+**why?**
+
+Use of global variables should be minimized. These are makes the program easier to read.
 ```js
 // BAD
 var badString = 'I am BAD',
