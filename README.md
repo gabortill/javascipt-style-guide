@@ -28,7 +28,7 @@ Use 4 spaces with soft TAB.
 
 **why?**
 
-4 spaces are imporve readabillity and the use of spaces can produce a larger filesize.
+4 spaces are imporve readabillity and the use of spaces can produce a smaller filesize.
 
 
 
