@@ -26,33 +26,54 @@ This is my guide for writing consistent JavaScript code.
 ## Indention
 Use 4 spaces with soft TAB.
 
-**Why?**
+**why?**
+
 4 spaces are imporve readabillity and the use of spaces can produce a larger filesize.
 
 
 
 ## Newline
-Use UNIX-style newlines (`\n`), and a newline character as the last character of a file. Windows-style newlines (`\r\n`) are forbidden inside any repository.
+Use UNIX-style newlines (`\n`), and a newline character as the last character of a file.
+
+**why?**
+
+Windows-style newlines (`\r\n`) are forbidden inside any repository.
 
 
 
 ## Trailing whitespace
 Clean up any trailing whitespace in javascript files.
 
+**why?**
+
+Trailing whitespaces are unnecessary and improve the filesize.
+
 
 
 ## Semicolon
-Leave semicolons is dangerous because it can make mask errors, so use them.
+Always use semicolons.
+
+**why?**
+
+Leave semicolons is dangerous because it can make mask errors.
 
 
 
 ## Line break
-Limit your lines to 80 characters. Screens have gotten much bigger, but your brain has not.
+Limit your lines to 100 characters. Place the break after an operator, ideally after a comma. The next line should be indented more 4 spaces.
+
+**why?**
+
+Screens have gotten much bigger, but your brain has not. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion.
 
 
 
 ## Line number
-Keep max 40 lines per file. Easier to understand if you see everything in a file without scrolling.
+Keep max 40 lines per file.
+
+**why?**
+
+Easier to understand if you see everything in a file without scrolling.
 
 
 
@@ -299,7 +320,12 @@ if (!goodArr.length) {
 
 
 ## Comment
-Use single line comments for developing. Block comments are for documentation. Place single line comments on a newline of subject and put an empty line before.
+Generally use single line comments. Place single line comments on a newline of subject and put an empty line before.
+
+**why?**
+
+Save block comments for formal documentation. Empty lines above comments are improve readabillity.
+
 ```js
 // BAD
 var bad = true; // comment in wrong place
