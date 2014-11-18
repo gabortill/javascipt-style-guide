@@ -21,6 +21,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Built-in](#built-in)
 1. [Comment](#comment)
 1. [Type Casting And Coercion](#type-casting-and-coercion)
+1. [Multiline string literal](#multiline-string-literal)
 
 
 
@@ -468,6 +469,30 @@ var badBool = new Boolean(something);
 ```js
 // GOOD
 var goodBool = Boolean(something);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Multiline string literal
+Not use multiline string literals. Use string concatenation instead.
+
+**why?**
+
+The whitespace at the beginning of each line can't be safely stripped at compile time; whitespace after the slash will result in tricky errors; and while most script engines support this, it is not part of ECMAScript.
+
+```js
+// BAD
+var badStr = 'Veggies es bonus vobis, proinde vos postulo essum magis \
+                 kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon \
+                 azuki bean garlic';
+```
+```js
+// GOOD
+var goodStr = 'Veggies es bonus vobis, proinde vos postulo essum magis' +
+    'kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon' +
+    'azuki bean garlic';
 ```
 
 **[⬆ back to top](#table-of-contents)**
