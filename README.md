@@ -344,7 +344,7 @@ Never extend the prototype of native JavaScript objects unless polyfilling.
 
 **why?**
 
-Your future self will be forever grateful.
+Hard to debug, and your future self will be forever grateful.
 
 ```js
 // BAD
@@ -402,3 +402,5 @@ var good;
 // set to true
 good = true;
 ```
+
+**[⬆ back to top](#table-of-contents)**
