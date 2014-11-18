@@ -511,7 +511,7 @@ var goodStr = 'Veggies es bonus vobis, proinde vos postulo essum magis' +
 
 ```js
 // BAD
-var badModule = 'I want to be a part of a module';
+var badModule = 'I want to be part of a module';
 ```
 ```js
 // GOOD
