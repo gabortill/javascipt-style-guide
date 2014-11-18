@@ -25,6 +25,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Module](#module)
 1. [Prototype](#prototype)
 1. [Hoisting](#hoisting)
+1. [Error handling](#error-handling)
 
 
 
@@ -34,8 +35,8 @@ This is my guide for writing consistent JavaScript code.
 
 **why?**
 
-1. 4 spaces are imporve readabillity.
-2. Use of spaces can produce a smaller filesize.
+1. 4 spaces are improve readability.
+2. Use of spaces can produce a smaller file size.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -57,7 +58,7 @@ Clean up any trailing whitespace in javascript files.
 
 **why?**
 
-Trailing whitespaces are unnecessary and improve the filesize.
+Trailing whitespaces are unnecessary and improve the file size.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -125,7 +126,7 @@ Always use curly braces with multiline blocks (opening braces go on the same lin
 
 **why?**
 
-To omit braces is decrease readabillity.
+To omit braces is decrease readability.
 
 ```js
 // BAD
@@ -260,7 +261,12 @@ var goodName = 'I am GOOD';
 
 
 ## Array
-Use Array literals instead of constructors. [Array constructors are error-prone due to their arguments.](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Array_and_Object_literals#Array_and_Object_literals)
+Use Array literals instead of constructors.
+
+**why?**
+
+[Array constructors are error-prone due to their arguments.](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Array_and_Object_literals#Array_and_Object_literals)
+
 ```js
 // BAD
 var badArr = new Array();
@@ -289,6 +295,10 @@ var goodArr = [
 ```
 
 Never use Array as a map/hash/associative array.
+
+**why?**
+
+There is no associative arrays in javascript.
 ```js
 // BAD
 var skills = [];
@@ -411,7 +421,7 @@ if (!goodArr.length) {
 **why?**
 
 1. Save block comments for formal documentation.
-2. Empty lines above comments are improve readabillity.
+2. Empty lines above comments are improve readability.
 
 ```js
 // BAD
@@ -561,7 +571,7 @@ Moving declarations to the top.
 
 **why?**
 
-Improve readabillity and easier to understand the code.
+Otherwise it cause an error, improve readability and easier to understand the code.
 
 ```js
 // BAD
@@ -577,6 +587,22 @@ function goodWrapper () {
     var msg = 'I am happy';
 
     console.log(msg);
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Error handling
+Try to use Exceptions
+
+```js
+// GOOD
+try {
+    throw new Error('Whoops!');
+} catch (e) {
+    console.log(e.name + ': ' + e.message);
 }
 ```
 
