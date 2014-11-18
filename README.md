@@ -62,11 +62,13 @@ Leave semicolons is dangerous because it can make mask errors.
 
 
 ## Line break
-Limit your lines to 100 characters. Place the break after an operator, ideally after a comma. The next line should be indented more 4 spaces.
+1. Limit your lines to 100 characters.
+2. Place the break after an operator, ideally after a comma. The next line should be indented more 4 spaces.
 
 **why?**
 
-Screens have gotten much bigger, but your brain has not. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion.
+1. Screens have gotten much bigger, but your brain has not.
+2. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion.
 
 
 
@@ -75,12 +77,17 @@ Keep max 40 lines per file.
 
 **why?**
 
-Easier to understand if you see everything in a file without scrolling.
+Easier to understand if you see everything without scrolling.
 
 
 
 ## Quotation mark
-Use single quotes. This is helpful when creating strings that include HTML.
+Use single quotes.
+
+**why?**
+
+This is helpful when creating strings that include HTML.
+
 ```js
 // BAD
 var bad = "BAD";
@@ -148,11 +155,14 @@ good
 
 
 ## Variable declaration
-All variables should be declared before used. The var statement should be the first statement in the function body. Avoid single var pattern and declare every variable before used.
+1. All variables should be declared before used.
+2. Avoid single var pattern and the var statements should be the first statement in the function body.
 
 **why?**
 
-Use of global variables should be minimized. These are makes the program easier to read.
+1. Use of global variables should be minimized.
+2. These are makes the program easier to read.
+
 ```js
 // BAD
 var badString = 'I am BAD',
