@@ -25,6 +25,8 @@ This is my guide for writing consistent JavaScript code.
 
 ## Indention
 Use 4 spaces with soft TAB.
+#### Why?
+4 spaces are imporve readabillity and the use of spaces can produce a larger filesize.
 
 
 
