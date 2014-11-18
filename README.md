@@ -4,33 +4,33 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Table of contents
-* [Indention](#indention)
-* [Newline](#newline)
-* [Trailing whitespace](#trailing-whitespace)
-* [Semicolon](#semicolon)
-* [Line break](#line-break)
-* [Line number](#line-number)
-* [Quotation mark](#quotation-mark)
-* [Curly brace in decision block](#curly-brace-in-decision-block)
-* [Chaining](#chaining)
-* [Variable declaration](#variable-declaration)
-* [Naming](#naming)
-* [Array](#array)
-* [Object](#object)
-* [Equality](#equality)
-* [Built-in](#built-in)
-* [Comment](#comment)
+ 1. [Indention](#indention)
+ 1. [Newline](#newline)
+ 1. [Trailing whitespace](#trailing-whitespace)
+ 1. [Semicolon](#semicolon)
+ 1. [Line break](#line-break)
+ 1. [Line number](#line-number)
+ 1. [Quotation mark](#quotation-mark)
+ 1. [Curly brace in decision block](#curly-brace-in-decision-block)
+ 1. [Chaining](#chaining)
+ 1. [Variable declaration](#variable-declaration)
+ 1. [Naming](#naming)
+ 1. [Array](#array)
+ 1. [Object](#object)
+ 1. [Equality](#equality)
+ 1. [Built-in](#built-in)
+ 1. [Comment](#comment)
 
 
 
 ## Indention
-1. Use 4 spaces.
-2. Use soft TAB.
+    1. Use 4 spaces.
+    2. Use soft TAB.
 
-**why?**
+    **why?**
 
-1. 4 spaces are imporve readabillity.
-2. Use of spaces can produce a smaller filesize.
+    1. 4 spaces are imporve readabillity.
+    2. Use of spaces can produce a smaller filesize.
 
 **[⬆ back to top](#table-of-contents)**
 
