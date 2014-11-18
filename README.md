@@ -32,6 +32,8 @@ This is my guide for writing consistent JavaScript code.
 1. 4 spaces are imporve readabillity.
 2. Use of spaces can produce a smaller filesize.
 
+**[⬆ back to top](#table-of-contents)**
+
 
 
 ## Newline
@@ -40,6 +42,8 @@ Use UNIX-style newlines (`\n`), and a newline character as the last character of
 **why?**
 
 Windows-style newlines (`\r\n`) are forbidden inside any repository.
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -50,6 +54,8 @@ Clean up any trailing whitespace in javascript files.
 
 Trailing whitespaces are unnecessary and improve the filesize.
 
+**[⬆ back to top](#table-of-contents)**
+
 
 
 ## Semicolon
@@ -58,6 +64,8 @@ Always use semicolons.
 **why?**
 
 Leave semicolons is dangerous because it can make mask errors.
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -70,6 +78,8 @@ Leave semicolons is dangerous because it can make mask errors.
 1. Screens have gotten much bigger, but your brain has not.
 2. A break after an operator decreases the likelihood that a copy-paste error will be masked by semicolon insertion.
 
+**[⬆ back to top](#table-of-contents)**
+
 
 
 ## Line number
@@ -78,6 +88,8 @@ Keep max 40 lines per file.
 **why?**
 
 Easier to understand if you see everything without scrolling.
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -98,6 +110,8 @@ var elem = "<input type=\"text\" />";
 var good = 'GOOD';
 var elem = '<input type="text" />';
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -125,6 +139,8 @@ if (true) {
     console.log('GOOD');
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -162,6 +178,8 @@ good
     .methodThree();
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 
 
 ## Variable declaration
@@ -196,6 +214,8 @@ var goodObj = {
 };
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 
 
 ## Naming
@@ -229,6 +249,8 @@ var a = 'avoid single character names';
 // GOOD
 var goodName = 'I am GOOD';
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -272,6 +294,8 @@ var skills = {
     'Document language': 'HTML5'
 };
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -329,6 +353,9 @@ var goodObj = {
 };
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
+
 
 ## Equality
 Use === and !== operators.
@@ -336,6 +363,8 @@ Use === and !== operators.
 **why?**
 
 The == and != operators do type coercion before comparing.
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
@@ -365,6 +394,8 @@ if (!goodArr.length) {
     console.log('I am GOOD');
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 
 
