@@ -23,6 +23,7 @@ This is my guide for writing consistent JavaScript code.
 1. [Type Casting And Coercion](#type-casting-and-coercion)
 1. [Multiline string literal](#multiline-string-literal)
 1. [Module](#module)
+1. [Prototype](#prototype)
 
 
 
@@ -520,6 +521,35 @@ var badModule = 'I want to be part of a module';
 
     var goodModule = 'IIFE is cool';
 }());
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## Prototype
+Assign methods to the prototype object, instead of overwriting the prototype with a new object.
+
+**why?**
+
+Overwriting the prototype makes inheritance impossible: by resetting the prototype you'll overwrite the base.
+
+```js
+// BAD
+BadObj.prototype = {
+    badProp: 'I am bad',
+    badMethod: function () {
+        return 'bad';
+    }
+};
+```
+```js
+// GOOD
+var method =
+GoodObj.prototype.goodProp = 'I am good';
+GoodObj.prototype.goodMethod = function () {
+    return 'good';
+};
 ```
 
 **[⬆ back to top](#table-of-contents)**
