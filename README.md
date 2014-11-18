@@ -308,6 +308,14 @@ var bad;
 bad = true;
 ```
 ```js
+// BAD
+/*
+block comments
+for documentation
+*/
+var bad = true;
+```
+```js
 // GOOD
 var good;
 
