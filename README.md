@@ -5,6 +5,7 @@ This is my guide for writing consistent JavaScript code.
 
 ## Table of contents
 1. [JSHint](#jshint)
+1. [JS Beautifier](#js-beautifier)
 1. [Indention](#indention)
 1. [Newline](#newline)
 1. [Trailing whitespace](#trailing-whitespace)
@@ -32,11 +33,22 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## JSHint
-Always use jshint.
+Always use JSHint.
 
 **why?**
 
-Because JSHint is a great tool to detect errors and potential problems in JavaScript code and to enforce your coding conventions.
+JSHint is a great tool to detect errors and potential problems in JavaScript code and to enforce your coding conventions.
+
+**[⬆ back to top](#table-of-contents)**
+
+
+
+## JS Beautifier
+Always use JS Beautifier.
+
+**why?**
+
+
 
 **[⬆ back to top](#table-of-contents)**
 
