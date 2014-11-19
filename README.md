@@ -48,7 +48,7 @@ Always use JS Beautifier.
 
 **why?**
 
-
+To beautify your code.
 
 **[⬆ back to top](#table-of-contents)**
 
