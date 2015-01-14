@@ -178,7 +178,7 @@ if (true) {
 ## Chaining
 Use one method per line if you want to chain methods, and also indent these.
 
-**why?$$
+**why?**
 
 Because it's easier to tell they are part of the same chain.
 
