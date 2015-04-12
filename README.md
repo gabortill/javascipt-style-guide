@@ -4,7 +4,7 @@ This is my guide for writing consistent JavaScript code.
 
 
 ## Table of contents
-1. [JSHint](#jshint)
+1. [JSCS](#jscs)
 1. [JS Beautifier](#js-beautifier)
 1. [Indention](#indention)
 1. [Newline](#newline)
@@ -32,12 +32,12 @@ This is my guide for writing consistent JavaScript code.
 
 
 
-## JSHint
-Always use JSHint.
+## JSCS
+Always use JSCS.
 
 **why?**
 
-JSHint is a great tool to detect errors and potential problems in JavaScript code and to enforce your coding conventions.
+JSCS is a code style linter for programmatically enforcing your style guide.
 
 **[⬆ back to top](#table-of-contents)**
 
